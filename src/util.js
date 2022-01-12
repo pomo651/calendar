@@ -3,8 +3,9 @@ export const getCalendarByMonth = (year, month) => {
     const today = new Date();
     const day = today.getDay();
     let currentDays = daysForEachMonth[month]; // jan 0  
+    let pastMonthTotal;
     if (month === 0) {
-       let pastMonthTotal = 31;
+        pastMonthTotal = 31;
     } else {
         pastMonthTotal = daysForEachMonth[month-1];
     }
