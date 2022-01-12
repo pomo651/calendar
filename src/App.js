@@ -7,8 +7,6 @@ class App extends Component {
   constructor() {
     super();
     const today = new Date();
-    // const arr = getCalendarByMonth(year, month);
-    // console.log(arr);
     this.onClickPrev = this.onClickPrev.bind(this);
     this.onClickNext = this.onClickNext.bind(this);
     this.state = {
